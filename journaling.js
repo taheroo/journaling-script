@@ -5,6 +5,8 @@ var myvalue = PropertiesService.getScriptProperties().getProperty('mykey'); //sp
 //main function
 function myFunction() {
   setTableHeading();
+  var firstWeekStartDay = new Date(2020, 1, 13); // 1962-07-07 (7th of July 1962)
+  var secondWeekStartDay = new Date(2020, 1, 20); // 1962-07-07 (7th of July 1962)
   setDays(new Date('01/13/2020'),new Date('01/26/2020')); // season interval
   insertWeekResultsRow(9,new Date('01/13/2020'),new Date('01/19/2020')); //week 1
   insertWeekResultsRow(17,new Date('01/20/2020'),new Date('01/26/2020')); //week 2
